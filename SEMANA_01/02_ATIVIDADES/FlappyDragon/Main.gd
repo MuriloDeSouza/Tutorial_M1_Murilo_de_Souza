@@ -22,7 +22,7 @@ func _process(delta):
 			$background.position.x = 600
 			
 		# movimenta as colunas para colisão
-		$columns.position.x -= 1*x #Aqui eu posso multiplicar a velocidade do dragão alterando o valor entre 1 e infinito
+		$columns.position.x -= 3*x #Aqui eu posso multiplicar a velocidade do dragão alterando o valor entre 1 e infinito
 		if ($columns.position.x) < -550:
 			$columns.position.x = rand_range(0, 350) - 50
 			$columns.position.y = rand_range(0, 400) - 200
