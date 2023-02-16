@@ -1,9 +1,10 @@
 extends Node # instancia a classe Node2D
 
-var status = 1 #Se for 0 (dragão parado) se for 1 (dragão em movimento)
-var vscore = 0 #ele conta a pontuação conforme o dragão passa pelos obstáculos
-var x = 1.5 #aqui é a base da velocidade do dragão cravado em 1.5 
-var y = 2.5 #aqui o movimento é horizontal do dragão fazendo com que ele suba e desca, (como ja esta cravado em 1.5 ele ja desce normalmente)
+var status = 1 #Se for 0 (dragão parado) se for 1 (dragão em movimento, como se eu estivesse dado play)
+var vscore = 0 #ele conta a pontuação conforme o dragão passa pelos obstáculos e está com zero pois começa mesmo com 0 pontos.
+var x = 1.5 #aqui é a base da velocidade do dragão cravado em 1.5 e se usa os multiplicadores de velocidade 1 nas linhas de código.
+var y = 1.5 #aqui o movimento é horizontal do dragão fazendo com que ele suba e desca, (como ja esta cravado em 1.5 ele ja desce normalmente sem clicar) e também, nas outras linhas de código se tem os multiplicadores por esses números cravados.
+>>>>>>> 60856e4421830aa96d5811d85982d2b4c6314d43
 
 # executa essa função ao carregar o jogo
 func _ready():
