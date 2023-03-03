@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.semana5.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 194.0
+margin_top = 217.0
+margin_right = 402.0
+margin_bottom = 273.0
+text = "Botão 1"
+icon_align = 1
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 412.0
+margin_top = 218.0
+margin_right = 617.0
+margin_bottom = 271.0
+text = "Botão 2"
+icon_align = 1
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 629.0
+margin_top = 217.0
+margin_right = 836.0
+margin_bottom = 273.0
+text = "Botão 3"
+icon_align = 1
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 418.0
+margin_top = 281.0
+margin_right = 617.0
+margin_bottom = 368.0
+align = 1
+
+[node name="Label" type="Label" parent="."]
+margin_left = 417.0
+margin_top = 139.0
+margin_right = 606.0
+margin_bottom = 205.0
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 635.0
+margin_top = 135.0
+margin_right = 829.0
+margin_bottom = 206.0
+text = "
+"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 417.0
+margin_top = 94.0
+margin_right = 610.0
+margin_bottom = 128.0
+text = "Armazena o número colocado
+no LineEdit."
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 638.0
+margin_top = 94.0
+margin_right = 831.0
+margin_bottom = 128.0
+text = "Se for par, escreve Nauro, se for 
+ímpar escreve \"Nauro Baldo\""
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
